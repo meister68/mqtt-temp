@@ -1,0 +1,23 @@
+/* #statLabel{ */
+/*    
+    font-size: 20px;
+    font-weight: bold;
+}
+#status{
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;  
+} */
+.card-header{
+    font-size: 20px;
+    font-weight: bold;  
+}
+.btn,#status{
+    border-radius: 10px;
+}
+.header{
+    background-color: gray;
+}
+.card{
+    min-height: 5px;
+}

@@ -1,0 +1,121 @@
+<html>
+
+<head>
+  <title>mows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+
+
+
+
+
+
+
+    </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1>MQTT</h1>
+  <p>My MQTT Web App</p>
+</body>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
+
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Broker</div>
+      <div class="card-body">
+        Address:
+        <input type="text" placeholder="Broker Adress" class="form-control-sm col" id="brokerAddress" value="ws://broker.hivemq.com:8000/mqtt"><br>
+        <br>
+        <button type="button" class="btn btn-primary" id="btnConnect">Connect</button>
+        <button type="button" class="btn btn-danger" id="btnDisconnect">Disconnect</button><br>
+        <br>
+        <label id="statLabel">Status</label>
+        <input type="text" class="form-control-sm col border-0 text-center" id="status" readonly>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Publish</div>
+      <div class="card-body">
+        Topic: <input type="text" placeholder="Topic" class="form-control-sm col" id="topic"><br>
+        <br>
+        Payload: <input type="text" placeholder="Payload" class="form-control-sm col" id="payload"><br>
+        <br>
+        <button type="button" class="btn btn-primary" id="btnPublish">Publish</button><br>
+        <br>
+        <table class="table table-bordered " id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th  class="col">Payload</th>
+              <th  class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Subscribe</div>
+      <div class="card-body">
+        Topic: <input type="text" placeholder="Topic" class="form-control-sm col" id="topicSubscribe"><br>
+        <br>
+        <button type="button" class="btn btn-primary" id="btnSubscribe">Subscribe</button>
+        <button type="button" class="btn btn-warning" id="btnUnSubscribe">Unsubscribe</button>
+        <br>
+        <br>
+        <table class="table table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th>Topic</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="card">
+      <div class="card-body">
+          <table class="table table-bordered" id="recievedTopics">
+              <thead>
+                <tr class="table-active">
+                  <th>Topic</th>
+                  <th>Payload</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          
+      </div>
+    
+    </div>
+    
+</div>
+
+
+
+
+
+</html>

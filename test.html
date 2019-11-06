@@ -1,0 +1,367 @@
+<html>
+
+<head>
+  <title>mows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+
+
+
+
+
+
+
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+</body>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
+
+
+<div class="container">
+  <br>
+  <h1 class="header text-center shadow-lg p-2 mb-4 rounded">MQTT</h1><br>
+  <hr />
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Morre-Sugal</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="recievedTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Gigante-Duran</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Empty</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Burce-Avila</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="recievedTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Balugo-Devilleres</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Repollo-Bargaso</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Empty</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="recievedTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Tanilon-Nadella</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Garrido-Erim</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Pelino-Cabia-an</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="recievedTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Empty</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Jalandoni-Rivas G</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Empty</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="recievedTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Tiburillo-Rivas J</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered" id="publishTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Payload</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Gravador-Rufo</div>
+      <div class="card-body">
+        <table class="table table-responsive table-bordered " id="subscribeTopics">
+          <thead class="thead-light">
+            <tr>
+              <th class="col">Topic</th>
+              <th class="col">Time</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="card-deck">
+      <div class="card">
+        <div class="card-header bg-primary text-center">Torres-Cabungcag</div>
+        <div class="card-body">
+          <table class="table table-responsive table-bordered" id="recievedTopics">
+            <thead class="thead-light">
+              <tr>
+                <th class="col">Topic</th>
+                <th class="col">Payload</th>
+                <th class="col">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-header bg-primary text-center">Empty</div>
+        <div class="card-body">
+          <table class="table table-responsive table-bordered" id="publishTopics">
+            <thead class="thead-light">
+              <tr>
+                <th class="col">Topic</th>
+                <th class="col">Payload</th>
+                <th class="col">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-primary text-center">Empty</div>
+        <div class="card-body">
+          <table class="table table-responsive table-bordered " id="subscribeTopics">
+            <thead class="thead-light">
+              <tr>
+                <th class="col">Topic</th>
+                <th class="col">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+    </div>
+    
+  <br>
+  <br>
+
+</div>
+
+
+
+
+
+</html>

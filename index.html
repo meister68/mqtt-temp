@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <title>mows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+
+
+
+
+
+
+
+    </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+  
+</body>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
+
+
+<div class="container">
+  <br>
+    <h1 class="header text-center shadow-lg p-2 mb-4 rounded">MQTT</h1><br>
+    <hr/>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header bg-primary text-center">Broker</div>
+      <div class="card-body">
+        Address:
+        <input type="text" placeholder="Broker Adress" class="form-control-sm col" id="brokerAddress" value="wss://test.mosquitto.org:8081/mqtt"><br>
+        <br>
+        <button type="button" class="btn btn-primary col" id="btnConnect">Connect</button><br>
+        <br>
+        <button type="button" class="btn btn-danger col" id="btnDisconnect">Disconnect</button><br>
+        <br>
+        <input type="text" class="form-control-sm col border-0 text-center " id="status" value="Status" readonly><br>
+        <br>
+        
+      </div>
+      <div class="card-body">
+          <table class="table table-responsive table-bordered" id="recievedTopics">
+              <thead class="thead-light">
+                <tr>
+                  <th class="col">Topic</th>
+                  <th class="col">Payload</th>
+                  <th class="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-primary text-center">Publish</div>
+      <div class="card-body">
+        Topic: <input type="text" placeholder="Topic" class="form-control-sm col" id="topic"><br>
+        <br>
+        Payload: <input type="text" placeholder="Payload" class="form-control-sm col" id="payload"><br>
+        <br>
+        <button type="button" class="btn btn-primary col btnSsecondary" id="btnPublish">Publish</button><br>
+        <br>
+       
+      </div>
+      <br>
+      <br>
+      <div class="card-body">
+          <table class="table table-responsive table-bordered" id="publishTopics">
+              <thead class="thead-light">
+                <tr>
+                  <th class="col">Topic</th>
+                  <th  class="col">Payload</th>
+                  <th  class="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+    
+              </tbody>
+            </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-primary text-center">Subscribe</div>
+      <div class="card-body">
+        Topic: <input type="text" placeholder="Topic" class="form-control-sm col" id="topicSubscribe"><br>
+        <br>
+        <button type="button" class="btn btn-primary col btnSsecondary" id="btnSubscribe">Subscribe</button><br>
+        <br>
+        <button type="button" class="btn btn-danger col btnSsecondary" id="btnUnSubscribe">Unsubscribe</button>
+        <br>
+        <br>
+       
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="card-body">
+                  <table class="table table-responsive table-bordered " id="subscribeTopics">
+                      <thead class="thead-light">
+                        <tr>
+                          <th class="col">Topic</th>
+                          <th class="col">Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+            
+                      </tbody>
+                    </table>
+              </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  
+</div>
+
+
+
+
+
+</html>
